@@ -3,7 +3,7 @@
   "main": "./lib/spec-runner",
   "version": "0.1.0",
   "private": true,
-  "description": "A short description of your package",
+  "description": "Spec runner for Atom. Run your spec in yer editor",
   "activationEvents": [
     "spec-runner:run-file",
     "spec-runner:run-line"
