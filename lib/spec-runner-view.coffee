@@ -14,4 +14,4 @@ class SpecRunnerView extends View
 
   close: ->
     console.log("Now closing...")
-    @detach()
+    @remove()
