@@ -24,6 +24,6 @@ class SpecLauncher
     options =
       cwd: atom.project.getPath()
     stdout = (output) -> specRunnerView.addLine(output)
-    stderr = (output) -> console.log(output)
+    stderr = (output) -> specRunnerView.addLine(output)
     exit = (code) -> console.log("pwd exited with #{code}")
     process = new BufferedProcess({command, args, options, stdout, stderr, exit})

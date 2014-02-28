@@ -1,16 +1,17 @@
-{View} = require 'atom'
+{ScrollView} = require 'atom'
 
 module.exports =
-class SpecRunnerView extends View
+class SpecRunnerView extends ScrollView
 
   @content: (params)->
-    @div class: 'spec-runner', =>
+    @div class: 'spec-runner editor editor-colors', =>
       @div class: "close-icon", click: "close", "Close"
-      @h2 params.spec
-      @ul class: 'output'
+      @div class: 'lines', =>
+        @div class: "line", params.spec
 
   addLine: (line)->
-    @find("ul.output").append("<li>#{line}</li>")
+    console.log(line)
+    @find("div.lines").append("<div class='line'>#{line}</div>")
 
   close: ->
     console.log("Now closing...")
