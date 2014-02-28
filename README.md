@@ -3,6 +3,7 @@
 A spec runner. Lets you run specs from within Atom. Defines two commands
 
 Command               | Description       | Default key binding
+--------------------- | ----------------- | ---------------------------
 spec-runner:run-file  | Runs entire file  | Ctrl-alt-r f
 spec-runner:run-line  | Runs spec at line | Ctrl-alt-r l
 
