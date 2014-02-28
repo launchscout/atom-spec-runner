@@ -5,7 +5,7 @@
   "private": true,
   "description": "A short description of your package",
   "activationEvents": ["spec-runner:run-file", "spec-runner:run-line"],
-  "repository": "https://github.com/atom/spec-runner",
+  "repository": "https://github.com/gaslight/atom-spec-runner",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
