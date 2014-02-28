@@ -1,15 +1,17 @@
 {
   "name": "spec-runner",
   "main": "./lib/spec-runner",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "A short description of your package",
-  "activationEvents": ["spec-runner:run-file", "spec-runner:run-line"],
+  "activationEvents": [
+    "spec-runner:run-file",
+    "spec-runner:run-line"
+  ],
   "repository": "https://github.com/gaslight/atom-spec-runner",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
