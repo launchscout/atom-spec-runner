@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Run file': 'spec-runner:run-file'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'spec-runner'
+      'submenu': [
+        { 'label': 'Run file', 'command': 'spec-runner:run-file' }
+      ]
+    ]
+  }
+]
