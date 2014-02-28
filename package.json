@@ -1,7 +1,7 @@
 {
   "name": "spec-runner",
   "main": "./lib/spec-runner",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "private": true,
   "description": "Spec runner for Atom. Run your spec in yer editor",
   "activationEvents": [
