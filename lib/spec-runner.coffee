@@ -1,9 +1,12 @@
 SpecLauncher = require './spec-launcher'
 
 module.exports =
+
   specRunnerView: null
 
   activate: (state) ->
+    atom.config.setDefaults "spec-runner",
+      command: "rspec"
     @specLauncher = new SpecLauncher()
     atom.workspaceView.command "spec-runner:run-file", =>
       @specLauncher.runCurrentFile()
