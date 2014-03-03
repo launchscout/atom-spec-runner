@@ -9,35 +9,12 @@ class SpecRunnerView extends ScrollView
     @div class: 'spec-runner editor editor-colors', =>
       @div class: 'lines'
 
-  # Useful for escaping HTML entities in js
-  h: (str) ->
-    if typeof (str) is "number" or str is true or str is false
-      return "" + str
-    else return ""  if not str or not str.length
-    i = undefined
-    out = ""
-    trans =
-      "<": "&lt;"
-      ">": "&gt;"
-      "\"": "&quot;"
-      "&": "&amp;"
-      "'": "&#39;"
-
-    c = undefined
-    arr = str.split("")
-    i = 0
-    while i < arr.length
-      c = arr[i]
-      if trans.hasOwnProperty(c)
-        out += trans[c]
-      else
-        out += c
-      i += 1
-    out
-
   addLine: (line)->
     console.log(line)
-    @find("div.lines").append("<div class='line'>#{@h(line)}</div>")
+    div = document.createElement('div')
+    div.setAttribute('class', 'line')
+    div.innerText = line
+    @find("div.lines").append(div)
 
   runCurrentLine: ->
     editor = atom.workspace.activePaneItem
