@@ -32,5 +32,5 @@ class SpecRunnerView extends ScrollView
       cwd: atom.project.getPath()
     stdout = (output) => @addLine(output)
     stderr = (output) => @addLine(output)
-    exit = (return_code) -> console.log("Exited with #{return_code}")
+    exit = (returnCode) -> console.log("Exited with #{returnCode}")
     process = new BufferedProcess({command, args, options, stdout, stderr, exit})
