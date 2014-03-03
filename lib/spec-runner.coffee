@@ -1,4 +1,3 @@
-SpecLauncher = require './spec-launcher'
 SpecRunnerView = require './spec-runner-view'
 
 configUri = "atom://spec-runner"
