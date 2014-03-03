@@ -11,7 +11,10 @@ class SpecRunnerView extends ScrollView
 
   addLine: (line)->
     console.log(line)
-    @find("div.lines").append("<div class='line'>#{line}</div>")
+    div = document.createElement('div')
+    div.setAttribute('class', 'line')
+    div.innerText = line
+    @find("div.lines").append(div)
 
   runCurrentLine: ->
     editor = atom.workspace.activePaneItem
