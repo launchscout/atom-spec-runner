@@ -10,3 +10,4 @@
 '.workspace':
   'ctrl-alt-r f': 'spec-runner:run-file'
   'ctrl-alt-r l': 'spec-runner:run-line'
+  'ctrl-alt-r p': 'spec-runner:run-previous'

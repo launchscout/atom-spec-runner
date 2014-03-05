@@ -6,7 +6,8 @@
   "description": "Spec runner for Atom. Run your spec in yer editor",
   "activationEvents": [
     "spec-runner:run-file",
-    "spec-runner:run-line"
+    "spec-runner:run-line",
+    "spec-runner:run-previous"
   ],
   "repository": "https://github.com/gaslight/atom-spec-runner",
   "license": "MIT",

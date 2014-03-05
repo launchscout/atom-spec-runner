@@ -13,15 +13,6 @@ class SpecRunnerView extends ScrollView
     console.log(line)
     @find("div.lines").append("<div class='line'>#{line}</div>")
 
-  runCurrentLine: ->
-    editor = atom.workspace.activePaneItem
-    line = editor.getCursorScreenRow()
-    @runSpec("#{editor.getPath()}:#{line + 1}")
-
-  runCurrentFile: ->
-    editor = atom.workspace.activePaneItem
-    @runSpec(editor.getPath())
-
   runSpec: (spec)->
     specCommand = atom.config.get("spec-runner.command")
     command = 'bash'
